@@ -52,6 +52,13 @@ li {
   border-style: none;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  text-shadow: 4px 4px 4px rgb(183, 18, 18);
+}
+
 .overview {
   margin-bottom: 20px;
 }
@@ -80,15 +87,16 @@ li {
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .github {
