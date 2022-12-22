@@ -2,7 +2,7 @@ function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours() % 12 || 12;
   if (hours < 10) {
-    hours = `0${hours}`;
+    hours = `${hours}`;
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -98,6 +98,7 @@ function search(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayTemperature);
 }
+
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");

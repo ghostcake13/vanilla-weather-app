@@ -1,13 +1,19 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "American Horror Story", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7e/Francisco_de_Goya_y_Lucientes_-_Witches_Sabbath_-_Google_Art_Project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
 }
 
 h1 {
-  color: #878787;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 ul {
@@ -20,8 +26,9 @@ li {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  color: rgb(135, 135, 135);
-  font-size: 16px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 18px;
   font-weight: 100;
   line-height: 19px;
 }
@@ -32,8 +39,18 @@ li {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: none;
   border-radius: 5px;
+  background: rgb(135, 135, 135, 0.4);
+}
+.city-input {
+  background-color: black;
+  border-style: none;
+}
+
+.btn {
+  background-color: black;
+  border-style: none;
 }
 
 .overview {
@@ -47,7 +64,6 @@ li {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -59,15 +75,6 @@ li {
   top: -34px;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
@@ -75,7 +82,6 @@ li {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
 }
 
 .weather-forecast-temp-min {
@@ -84,4 +90,8 @@ li {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+.github {
+  font-family: arial, sans-serif;
 }
