@@ -3,7 +3,6 @@ body {
   color: white;
   text-shadow: 2px 2px 4px #000000;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7e/Francisco_de_Goya_y_Lucientes_-_Witches_Sabbath_-_Google_Art_Project.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 20%;
 }
@@ -85,7 +84,7 @@ li {
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .weather-forecast-temperatures {
