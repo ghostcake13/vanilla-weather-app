@@ -1,7 +1,7 @@
 body {
   font-family: "American Horror Story", sans-serif;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  color: rgb(253, 247, 240);
+  text-shadow: 2px 3px 4px #000000;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7e/Francisco_de_Goya_y_Lucientes_-_Witches_Sabbath_-_Google_Art_Project.jpg");
   background-size: cover;
   background-position-y: 20%;
@@ -25,7 +25,7 @@ li {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  color: white;
+  color: rgb(253, 247, 240);
   text-shadow: 2px 2px 4px #000000;
   font-size: 18px;
   font-weight: 100;
@@ -49,14 +49,16 @@ li {
 
 .btn {
   background-color: black;
+  color: rgb(253, 247, 240);
   border-style: none;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(253, 247, 240);
   color: black;
   text-shadow: 4px 4px 4px rgb(183, 18, 18);
+  border-style: none;
 }
 
 .overview {
@@ -95,10 +97,20 @@ li {
 }
 
 .weather-forecast-temperatures {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
 }
 
 .github {
-  font-family: arial, sans-serif;
+  text-shadow: 2px 2px 4px black;
+}
+
+.code-link {
+  color: black;
+  text-shadow: none;
+}
+
+.code-link:hover {
+  color: rgb(253, 247, 240);
+  text-shadow: 4px 4px 4px rgb(183, 18, 18);
 }
