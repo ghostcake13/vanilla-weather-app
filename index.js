@@ -73,7 +73,9 @@ function displayTemperature(response) {
     response.data.condition.description;
   document.querySelector("#humidity").innerHTML =
     response.data.temperature.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document.querySelector("#date").innerHTML = formatDate(
     response.data.time * 1000
   );
@@ -97,6 +99,9 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
+  if (cityInputElement.value === "") {
+    alert("Please type a city");
+  }
 }
 
 let form = document.querySelector("#search-form");
