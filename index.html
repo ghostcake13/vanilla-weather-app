@@ -16,15 +16,20 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
+      <link
+      href="https://fonts.cdnfonts.com/css/american-horror-story"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
+        <div class="page-title"><h1 class="mb-3">Ghostcake Weather</h1></div>
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-7">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -40,10 +45,13 @@
                   class="btn btn-primary w-100"
                 />
               </div>
+               <div class="col-2">
+                <button class="btn btn-primary w-100" id="current-location">🐐</button>
+              </div>
             </div>
           </form>
           <div class="overview">
-            <h1 id="city">New York</h1>
+            <h1 id="city"></h1>
             <ul>
               <li id="date"></li>
               <li id="description">Clear</li>
@@ -56,17 +64,15 @@
                 <div>
                   <strong id="temperature"></strong
                   ><span class="units">
-                    <a href="#" id="celcius-link">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a></span
+                  °F</span
                   >
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>k/ph</li>
+                <li>Humidity: <span id="humidity" class="secondary-conditions"></span>%</li>
+                <li>Wind: <span id="wind" class="secondary-conditions"></span> mph</li>
               </ul>
             </div>
             </div>
@@ -74,17 +80,18 @@
           </div>
           </div>
           <small> </small>
-        </div>
-        <small>
+       
+        <small class="github">
           <a
             href="https://github.com/ghostcake13/vanilla-weather-app"
-            target="https://github.com/ghostcake13/vanilla-weather-app"
+            target="https://github.com/ghostcake13/vanilla-weather-app" class="code-link"
           >
             Open-source code </a
           >by Miranda Severns
         </small>
       </div>
     </div>
+     </div>
     <script src="index.js
   "></script>
   </body>

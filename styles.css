@@ -1,13 +1,18 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "American Horror Story", sans-serif;
+  color: rgb(253, 247, 240);
+  text-shadow: 2px 3px 4px #000000;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7e/Francisco_de_Goya_y_Lucientes_-_Witches_Sabbath_-_Google_Art_Project.jpg");
+  background-size: cover;
+  background-position-y: 20%;
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  text-shadow: 4px 4px 4px #000000;
 }
 
 ul {
@@ -20,20 +25,43 @@ li {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  color: rgb(135, 135, 135);
-  font-size: 16px;
+  color: rgb(253, 247, 240);
+  text-shadow: 4px 4px 4px #000000;
+  font-size: 20px;
   font-weight: 100;
   line-height: 19px;
 }
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 85%;
   margin: 30px auto;
 }
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: none;
   border-radius: 5px;
+  background: rgb(135, 135, 135, 0.4);
+}
+.city-input {
+  background-color: black;
+  border-style: none;
+}
+
+.btn {
+  background-color: black;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  color: rgb(253, 247, 240);
+  border-style: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(253, 247, 240);
+  color: black;
+  text-shadow: 4px 4px 4px rgb(183, 18, 18);
+  border-style: none;
 }
 
 .overview {
@@ -47,7 +75,6 @@ li {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -55,17 +82,12 @@ li {
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 24px;
   top: -34px;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
+.secondary-units {
+  font-size: 24px;
 }
 
 .weather-forecast {
@@ -74,14 +96,33 @@ li {
 }
 
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  font-size: 24px;
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.github {
+  text-shadow: 2px 2px 4px black;
+}
+
+.code-link {
+  color: black;
+  text-shadow: none;
+  font-size: 14px;
+}
+
+.code-link:hover {
+  color: rgb(253, 247, 240);
+  text-shadow: 4px 4px 4px rgb(183, 18, 18);
+}
+
+.page-title {
+  font-size: 48px;
 }
